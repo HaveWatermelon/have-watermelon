@@ -48,7 +48,7 @@ For the styles import `index.css`. For the breakpoints mixin import `breakpoint.
 
 ### Form
 
-An extensive (and highly opinionated) form component. For configuration and example usage see [`FormConfig`](https://github.com/villageweb/have-watermelon/blob/master/src/components/Form/form-config.ts). For styling the fields and button there are a couple of [classes to override](#css-classes-to-override).
+An extensive (and highly opinionated) form component. For styling the fields and button there are a couple of [classes to override](#css-classes-to-override).
 
 ```typescript
 import { Form } from 'have-watermelon';
