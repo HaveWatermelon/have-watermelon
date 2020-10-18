@@ -11,31 +11,31 @@ Common React components used by [Watermelon Development](havewatermelon.co.za)
 To install the package run
 
 ```
-npm install village-components
+npm install have-watermelon
 ```
 
-You can now import `village-components` as a normal package installed from npm like so:
+You can now import `have-watermelon` as a normal package installed from npm like so:
 
 ```typescript
-import { Icon } from 'village-components';
+import { Icon } from 'have-watermelon';
 ```
 
 You can also import the type definitions if you're using TypeScript like so:
 
 ```typescript
-import { Icon, IconProps } from 'village-components';
+import { Icon, IconProps } from 'have-watermelon';
 ```
 
 For the optional styles import `index.css`.
 
 ```css
-@import '~village-components/dist/index.css';
+@import '~have-watermelon/dist/index.css';
 ```
 
 For the breakpoints mixin import `breakpoint.scss`.
 
 ```css
-@import '~village-components/dist/breakpoints.scss';
+@import '~have-watermelon/dist/breakpoints.scss';
 ```
 
 ## Local Development
@@ -44,15 +44,15 @@ Clone this repo to your local computer, then run:
 
 - `npm install && npm run build`
 - To make this component available to other projects on your local computer, run `npm link` or `yarn link`.
-- Then go to the project where you want to use this package and run `npm/ yarn link village-components`.
+- Then go to the project where you want to use this package and run `npm/ yarn link have-watermelon`.
 
 To fix the multiple copies of React bug that shows up with linked React packages:
 
 - navigate to the root of this repo
 - run `npm link ../path/to/your/parent/project/node_modules/react`
 
-You can now import `village-components` as a normal package installed from npm like so
+You can now import `have-watermelon` as a normal package installed from npm like so
 
 ```typescript
-import { Icon } from 'village-components';
+import { Icon } from 'have-watermelon';
 ```

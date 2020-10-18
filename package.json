@@ -1,5 +1,5 @@
 {
-  "name": "village-components",
+  "name": "have-watermelon",
   "version": "0.0.34",
   "description": "",
   "main": "dist/index.js",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/villageweb/village-components.git"
+    "url": "git+https://github.com/HaveWatermelon/have-watermelon.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/villageweb/village-components/issues"
+    "url": "https://github.com/HaveWatermelon/have-watermelon/issues"
   },
-  "homepage": "https://github.com/villageweb/village-components#readme",
+  "homepage": "https://github.com/HaveWatermelon/have-watermelon.git#readme",
   "peerDependencies": {
     "react": "^16.8.0",
     "react-dom": "^16.8.0"

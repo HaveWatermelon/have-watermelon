@@ -1,6 +1,6 @@
-# Village Web Components
+# Watermelon Components
 
-Common React components used on Village Web
+Common React components used by [Watermelon Development](https://havewatermelon.co.za)
 
 ## How to use
 
@@ -8,30 +8,30 @@ Clone this repo to your local computer, then run:
 
 - `npm install && npm run build`
 - To make this component available to other projects on your local computer, run `npm link` or `yarn link`.
-- Then go to the project where you want to use this package and run `npm/ yarn link village-components`.
+- Then go to the project where you want to use this package and run `npm/ yarn link have-watermelon`.
 
 Finally, to fix the multiple copies of React bug that shows up with linked React packages:
 
-- navigate to the root of the `village-components` package
+- navigate to the root of the `have-watermelon` package
 - run `npm link ../path/to/your/parent/project/node_modules/react`
 
-You can now import `village-components` as a normal package installed from npm like so:
+You can now import `have-watermelon` as a normal package installed from npm like so:
 
 ```typescript
-import { Icon } from "village-components";
+import { Icon } from 'have-watermelon';
 ```
 
 You can also import the type definitions if you're using TypeScript like so:
 
 ```typescript
-import { Icon, IconProps } from "village-components";
+import { Icon, IconProps } from 'have-watermelon';
 ```
 
 For the styles import `index.css`. For the breakpoints mixin import `breakpoint.scss`.
 
 ```css
-@import "~village-components/dist/index.css";
-@import "~village-components/dist/breakpoints.scss";
+@import '~have-watermelon/dist/index.css';
+@import '~have-watermelon/dist/breakpoints.scss';
 ```
 
 ## Components
@@ -48,14 +48,14 @@ For the styles import `index.css`. For the breakpoints mixin import `breakpoint.
 
 ### Form
 
-An extensive (and highly opinionated) form component. For configuration and example usage see [`FormConfig`](https://github.com/villageweb/village-components/blob/master/src/components/Form/form-config.ts). For styling the fields and button there are a couple of [classes to override](#css-classes-to-override).
+An extensive (and highly opinionated) form component. For configuration and example usage see [`FormConfig`](https://github.com/villageweb/have-watermelon/blob/master/src/components/Form/form-config.ts). For styling the fields and button there are a couple of [classes to override](#css-classes-to-override).
 
 ```typescript
-import { Form } from "village-components";
+import { Form } from 'have-watermelon';
 
 <Form
   config={loginForm}
-  submit={(data) =>
+  submit={data =>
     this.props.login({ username: data.email, password: data.password })
   }
   submitButtonText="Log in"
@@ -79,7 +79,7 @@ import { Form } from "village-components";
 This component renders an svg icon retrieved from icons stored on Cloudinary.
 
 ```typescript
-import { Icon } from "village-components";
+import { Icon } from 'have-watermelon';
 
 <Icon
   name="cross"
@@ -105,7 +105,7 @@ IconProps = {
 This component renders a notification on the top right of the screen and in the center for mobile.
 
 ```typescript
-import { Notification } from "village-components";
+import { Notification } from 'have-watermelon';
 ```
 
 ```typescript
@@ -113,7 +113,7 @@ import { Notification } from "village-components";
   message="This is a test message"
   type="success"
   persist={true}
-  onClose={() => console.log("Notification closed")}
+  onClose={() => console.log('Notification closed')}
 />
 ```
 
@@ -131,7 +131,7 @@ NotificationProps = {
 ### Button
 
 ```typescript
-import { Button } from "village-components";
+import { Button } from 'have-watermelon';
 
 <Button isLoading={false} mode="primary" isContained>
   Click Me!!
@@ -157,17 +157,17 @@ import { Button } from "village-components";
 Provides a reducer for actions that might require a loader/ spinner because they are async e.g calls to your backend. Dispatch `startAsync` before your long running code and the reducer adds your action into state. Then dispatch `stopAsync` once it is done, the action is then removed from state. You can use this in your components to show a loader while your action is stored as state managed by the `reduxLoaderReducer`.
 
 ```typescript
-import { reduxLoaderReducer } from "village-components";
+import { reduxLoaderReducer } from 'have-watermelon';
 
 const rootReducer = combineReducers({
   common,
   orders,
-  loader: reduxLoaderReducer,
+  loader: reduxLoaderReducer
 });
 ```
 
 ```typescript
-import { startAsync, stopAsync } from "village-components";
+import { startAsync, stopAsync } from 'have-watermelon';
 
 dispatch(startAsync(LOGIN));
 // your code to the server.
