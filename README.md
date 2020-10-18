@@ -4,7 +4,7 @@ Common React components used by [Watermelon Development](https://havewatermelon.
 
 ## How to use
 
-Clone this repo to your local computer, then run:
+Clone this repo to your local computer, then run: 
 
 - `npm install && npm run build`
 - To make this component available to other projects on your local computer, run `npm link` or `yarn link`.
