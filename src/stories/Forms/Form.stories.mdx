@@ -44,7 +44,7 @@ export const Template = args => <Form {...args} />;
   name="Simple Form"
   args={{
     config: loginForm,
-    submitButtonText: 'Log in',
+    submitButtonContent: 'Log in',
     onSubmit: data => alert('Your form data\n' + JSON.stringify(data, null, 2)),
     footerContent: (
       <span className="form__footer">
@@ -69,7 +69,7 @@ export const Template = args => <Form {...args} />;
   name="More Controls"
   args={{
     config: registerForm,
-    submitButtonText: 'Sign up',
+    submitButtonContent: 'Sign up',
     onSubmit: data => alert('Your form data\n' + JSON.stringify(data, null, 2)),
     footerContent: (
       <span className="form__footer">
@@ -95,7 +95,7 @@ export const Template = args => <Form {...args} />;
   args={{
     config: checkoutForm,
     columnType: 'double',
-    submitButtonText: 'Sign up',
+    submitButtonContent: 'Sign up',
     onSubmit: data => alert('Your form data\n' + JSON.stringify(data, null, 2))
   }}
 >
@@ -162,7 +162,7 @@ export const loginForm: FormConfig = {
   onSubmit={formValues =>
     this.login({ username: formValues.email, password: formValues.password })
   }
-  submitButtonText="Log in"
+  submitButtonContent="Log in"
   error={this.props.loginError}
   footerContent={
     <span className="form__footer">
@@ -341,7 +341,7 @@ export const registerForm: FormConfig = {
 <Form
   config={registerForm}
   onSubmit={data => this.register(data)}
-  submitButtonText="Sign up"
+  submitButtonContent="Sign up"
   error={this.props.registerError}
   footerContent={
     <span className="form__footer">
@@ -469,7 +469,7 @@ export const checkoutForm: FormConfig = {
   config={checkoutForm}
   columnType="double"
   onSubmit={data => this.placeOrder(data)}
-  submitButtonText="Sign up"
+  submitButtonContent="Sign up"
   error={this.props.error}
   isLoading={this.props.isLoading}
 />
