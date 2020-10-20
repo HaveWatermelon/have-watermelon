@@ -29,6 +29,9 @@
   &--1 {
     flex: 1;
   }
+  &__column {
+    flex-direction: column;
+  }
 }
 
 .align {

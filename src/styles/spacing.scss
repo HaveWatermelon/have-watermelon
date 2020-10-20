@@ -40,6 +40,9 @@ $sides: (
         &--none {
           #{$prop}-#{$side}: 0;
         }
+        &--auto {
+          #{$prop}-#{$side}: auto;
+        }
         @each $size, $value in $sizes {
           &--#{$size} {
             #{$prop}-#{$side}: $value;
