@@ -58,6 +58,21 @@
   }
   &--none {
     display: none;
+    &-sm {
+      @include respond-to(small) {
+        display: none;
+      }
+    }
+    &-md {
+      @include respond-to(medium) {
+        display: none;
+      }
+    }
+    &-lg {
+      @include respond-to(large) {
+        display: none;
+      }
+    }
   }
   &--flex {
     display: flex;
