@@ -58,6 +58,21 @@
   }
   &--none {
     display: none;
+    &-sm {
+      @include respond-to(small) {
+        display: none;
+      }
+    }
+    &-md {
+      @include respond-to(medium) {
+        display: none;
+      }
+    }
+    &-lg {
+      @include respond-to(large) {
+        display: none;
+      }
+    }
   }
   &--flex {
     display: flex;
@@ -210,5 +225,11 @@
 @keyframes grow {
   50% {
     transform: scale(1.1);
+  }
+}
+
+.fill {
+  &--white {
+    fill: #fff;
   }
 }

@@ -25,13 +25,25 @@ $sides: (
       &--none {
         #{$prop}: 0;
       }
-      &-v--#{$size} {
-        #{$prop}-top: $value;
-        #{$prop}-bottom: $value;
+      &-v {
+        &--#{$size} {
+          #{$prop}-top: $value;
+          #{$prop}-bottom: $value;
+        }
+        &--none {
+          #{$prop}-top: 0;
+          #{$prop}-bottom: 0;
+        }
       }
-      &-h--#{$size} {
-        #{$prop}-left: $value;
-        #{$prop}-right: $value;
+      &-h {
+        &--#{$size} {
+          #{$prop}-left: $value;
+          #{$prop}-right: $value;
+        }
+        &--none {
+          #{$prop}-left: 0;
+          #{$prop}-right: 0;
+        }
       }
     }
 
@@ -39,6 +51,9 @@ $sides: (
       &-#{$key} {
         &--none {
           #{$prop}-#{$side}: 0;
+        }
+        &--auto {
+          #{$prop}-#{$side}: auto;
         }
         @each $size, $value in $sizes {
           &--#{$size} {

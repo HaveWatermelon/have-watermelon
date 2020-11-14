@@ -8,7 +8,12 @@ import checkoutForm from './checkoutForm';
 
 # Form
 
-Opinionated form component. See what props to pass in [**over here**](#props).
+Opinionated form component.
+
+To use there are just two simple steps
+
+1. Draft config to describe your form ([see example](#simple-form-code))
+2. Then pass in the config as a prop to the `Form` component ([see other props](#props))
 
 For own styling override below classes
 
@@ -106,6 +111,8 @@ export const Template = args => <Form {...args} />;
 
 ## Simple form code
 
+Create your form configuration
+
 ```typescript
 import { FormConfig } from 'have-watermelon';
 
@@ -156,6 +163,8 @@ export const loginForm: FormConfig = {
 };
 ```
 
+Add your form component in your JSX and pass in the config above
+
 ```jsx
 <Form
   config={loginForm}
@@ -179,6 +188,8 @@ export const loginForm: FormConfig = {
 <br />
 
 ## Complex Form Code
+
+Create your form configuration
 
 ```typescript
 import { FormConfig } from 'have-watermelon';
@@ -337,6 +348,8 @@ export const registerForm: FormConfig = {
 };
 ```
 
+Add your form component in your JSX and pass in the config above
+
 ```jsx
 <Form
   config={registerForm}
@@ -356,6 +369,8 @@ export const registerForm: FormConfig = {
 ```
 
 ## Two Column Code
+
+Create your form configuration
 
 ```typescript
 import { FormConfig } from 'have-watermelon';
@@ -463,6 +478,8 @@ export const checkoutForm: FormConfig = {
   }
 };
 ```
+
+Add your form component in your JSX and pass in the config above
 
 ```jsx
 <Form

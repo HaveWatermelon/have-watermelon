@@ -165,7 +165,6 @@ class Form extends Component<FormProps> {
         {this.props.subFooterContent}
         {this.props.submitButtonContent !== 'none' && (
           <Button
-            className="button button--primary"
             type="submit"
             isLoading={this.props.isLoading}
             disabled={!this.state.isValid}
