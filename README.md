@@ -1,10 +1,10 @@
 # Watermelon Components
 
-Common React components used by [Watermelon Development](https://havewatermelon.co.za)
+Common React components used by [Watermelon Development](https://havewatermelon.co.za). Find the docs at [https://storybook.havewatermelon.com/](https://storybook.havewatermelon.com/).
 
 ## How to use
 
-Clone this repo to your local computer, then run: 
+Clone this repo to your local computer, then run:
 
 - `npm install && npm run build`
 - To make this component available to other projects on your local computer, run `npm link` or `yarn link`.
