@@ -1,6 +1,6 @@
 # Watermelon Components
 
-Common React components used by [Watermelon Development](https://havewatermelon.co.za). Find the docs at [https://storybook.havewatermelon.com/](https://storybook.havewatermelon.com/).
+Common React components used by [Watermelon Development](https://havewatermelon.co.za). Find the docs [here](https://storybook.havewatermelon.com).
 
 ## How to use
 
