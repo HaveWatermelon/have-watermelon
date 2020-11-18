@@ -107,6 +107,52 @@ export default {
       }
     ]
   },
+  province: {
+    inputType: 'select',
+    label: 'Province',
+    attributes: {
+      value: 'GAUTENG',
+      type: 'text'
+    },
+    fields: [
+      {
+        label: 'Gauteng',
+        value: 'GAUTENG'
+      },
+      {
+        label: 'Eastern Cape',
+        value: 'EASTERN_CAPE'
+      },
+      {
+        label: 'Free State',
+        value: 'FREE_STATE'
+      },
+      {
+        label: 'KwaZulu-Natal',
+        value: 'KWAZULU_NATAL'
+      },
+      {
+        label: 'Limpopo',
+        value: 'LIMPOPO'
+      },
+      {
+        label: 'Mpumalanga',
+        value: 'MPUMALANGA'
+      },
+      {
+        label: 'Northen Cape',
+        value: 'NORTHEN_CAPE'
+      },
+      {
+        label: 'North West',
+        value: 'NORTH_WEST'
+      },
+      {
+        label: 'Western Cape',
+        value: 'WESTERN_CAPE'
+      }
+    ]
+  },
   password: {
     inputType: 'input',
     label: 'Password',

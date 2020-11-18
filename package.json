@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
+    "build:watch": "rollup -c --watch",
     "start": "rollup -c -w",
     "deploy:patch": "npm run build && npm version patch && npm publish",
     "storybook": "start-storybook -p 6006",
