@@ -82,6 +82,78 @@ export const Template = args => <Button {...args} />;
 
 <br />
 
+### Rounded
+
+<Story
+  name="Rounded"
+  args={{
+    mode: 'rounded',
+    children: 'Read more'
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+### Ghost
+
+<Story
+  name="Ghost"
+  args={{
+    mode: 'ghost',
+    children: 'Read more'
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+### Link
+
+<Story
+  name="Link"
+  args={{
+    mode: 'link',
+    children: 'Submit'
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+### Small
+
+<Story
+  name="Small"
+  args={{
+    mode: 'sm',
+    children: 'Submit'
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+### Large
+
+<Story
+  name="Large"
+  args={{
+    mode: 'lg',
+    children: 'Submit'
+  }}
+>
+  {Template.bind({})}
+</Story>
+
+### Reset
+
+<Story
+  name="Reset"
+  args={{
+    mode: 'reset',
+    children: 'Cancel'
+  }}
+>
+  {Template.bind({})}
+</Story>
+
 ## Props
 
 <ArgsTable of={Button} />

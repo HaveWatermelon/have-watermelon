@@ -10,6 +10,12 @@ Clone this repo to your local computer, then run:
 - To make this component available to other projects on your local computer, run `npm link` or `yarn link`.
 - Then go to the project where you want to use this package and run `npm/ yarn link have-watermelon`.
 
+To use locally in development mode:
+
+- `npm run storybook` and `npm run start` concurrently
+-  It will automatically launch your default browser on the link `http://localhost:6006/?path=/story/introduction-getting-started--page`.
+- It will automatically build after every code change made.
+
 Finally, to fix the multiple copies of React bug that shows up with linked React packages:
 
 - navigate to the root of the `have-watermelon` package
