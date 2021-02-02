@@ -33,19 +33,21 @@ const Field = (props: any) => {
       break;
     case 'select':
       inputEl = (
-        <select
-          {...props.attributes}
-          name={props.id}
-          onChange={props.changed}
-          value={props.attributes.value}
-          className="form__input"
-        >
-          {props.fields.map((f: any) => (
-            <option key={f.value} value={f.value}>
-              {f.label}
-            </option>
-          ))}
-        </select>
+        <div className="form__select">
+          <select
+            {...props.attributes}
+            name={props.id}
+            onChange={props.changed}
+            value={props.attributes.value}
+            className="form__input"
+          >
+            {props.fields.map((f: any) => (
+              <option key={f.value} value={f.value}>
+                {f.label}
+              </option>
+            ))}
+          </select>
+        </div>
       );
       break;
     case 'check':

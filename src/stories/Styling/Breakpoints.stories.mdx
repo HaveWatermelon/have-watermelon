@@ -1,0 +1,40 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Styling/Breakpoints" />
+
+# Styling
+
+For the styles import `index.css`. For the breakpoints mixin import `breakpoint.scss`.
+
+```css
+@import '~have-watermelon/dist/index.css';
+@import '~have-watermelon/dist/breakpoints.scss';
+```
+
+We have only 3 breakpoints
+
+```
+'small': 425px
+'medium': 768px
+'large': 1200px
+```
+
+## respond-to mixin
+
+```css
+@mixin respond-to(<small|medium|large>) {
+  ...css;
+}
+```
+
+## isDeviceSize function
+
+Should you need to determine sizes in Javascript
+
+Returns a boolean that determines whether the window width is one of `SMALL` (<= 425px), `MEDIUM` (<= 768px) or `LARGE` (> 768px).
+
+```typescript
+const isMobile: boolean = isDeviceSize(DeviceSize.SMALL);
+```
+
+`DeviceSize` is the enumeration of the 3 device sizes.

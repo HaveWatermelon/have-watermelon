@@ -50,6 +50,20 @@
     height: 13rem;
     resize: vertical;
   }
+  &__select {
+    position: relative;
+    .form__input {
+      cursor: pointer;
+    }
+    &::after {
+      content: '▾';
+      position: absolute;
+      right: 10px;
+      top: 9px;
+      text-align: center;
+      pointer-events: none;
+    }
+  }
   &__radio {
     position: relative;
     padding-left: 2rem;
